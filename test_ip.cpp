@@ -2,8 +2,8 @@
 #include "ip_lib.h"
 
 TEST(TestIp, TestSorting) {
-  auto ip_pool = ip_pool_read("../test_data/ip_filter_small.tsv");
-  auto ip_pool_sorted = ip_pool_read("../test_data/ip_filter_small_sorted.tsv");
+  auto ip_pool = ip_pool_read("test_data/ip_filter_small.tsv");
+  auto ip_pool_sorted = ip_pool_read("test_data/ip_filter_small_sorted.tsv");
 
   EXPECT_GT(ip_pool.size(), 0);
 
@@ -13,8 +13,8 @@ TEST(TestIp, TestSorting) {
 }
 
 TEST(TestIp, TestFilterFirst) {
-  auto ip_pool = ip_pool_read("../test_data/ip_filter.tsv");
-  auto ip_pool_filtered_ref = ip_pool_read("../test_data/ip_filter_first.tsv");
+  auto ip_pool = ip_pool_read("test_data/ip_filter.tsv");
+  auto ip_pool_filtered_ref = ip_pool_read("test_data/ip_filter_first.tsv");
 
   EXPECT_GT(ip_pool.size(), 0);
 
@@ -26,8 +26,8 @@ TEST(TestIp, TestFilterFirst) {
 }
 
 TEST(TestIp, TestFilterOneTwo) {
-  auto ip_pool = ip_pool_read("../test_data/ip_filter.tsv");
-  auto ip_pool_filtered_ref = ip_pool_read("../test_data/ip_filter_onetwo.tsv");
+  auto ip_pool = ip_pool_read("test_data/ip_filter.tsv");
+  auto ip_pool_filtered_ref = ip_pool_read("test_data/ip_filter_onetwo.tsv");
 
   EXPECT_GT(ip_pool.size(), 0);
 
@@ -39,8 +39,8 @@ TEST(TestIp, TestFilterOneTwo) {
 }
 
 TEST(TestIp, TestFilterAny) {
-  auto ip_pool = ip_pool_read("../test_data/ip_filter.tsv");
-  auto ip_pool_filtered_ref = ip_pool_read("../test_data/ip_filter_any.tsv");
+  auto ip_pool = ip_pool_read("test_data/ip_filter.tsv");
+  auto ip_pool_filtered_ref = ip_pool_read("test_data/ip_filter_any.tsv");
 
   EXPECT_GT(ip_pool.size(), 0);
 
